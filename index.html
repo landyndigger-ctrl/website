@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>AVION Sites</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<!-- Particles background -->
+<canvas id="particles"></canvas>
+
+<!-- LANDING -->
+<section id="landing" class="center landing fade-in">
+  <h1 class="glow">AVION</h1>
+  <p class="subtitle">SITES</p>
+
+  <div class="question">
+    DO YOU KNOW HOW TO BEAM?
+  </div>
+
+  <div class="btns">
+    <button class="primary" onclick="goYes()" aria-label="Yes">✔ YES</button>
+    <button onclick="goNo()" aria-label="No">✖ NO</button>
+  </div>
+</section>
+
+<!-- DASHBOARD -->
+<section id="dash" class="dashboard hidden">
+  <div class="grid">
+
+    <div class="card fade-up">
+      <div class="icon">🛡️</div>
+      <h2>IMMORTAL</h2>
+      <div class="tag">BEGINNER FRIENDLY</div>
+      <button class="access" onclick="window.open('https://immortal.rs/?code=Njg2NDMzNTEyNzU0MzMxODQwMw==','_blank')">ACCESS DASHBOARD</button>
+    </div>
+
+    <div class="card fade-up" style="animation-delay:.1s">
+      <div class="icon">⚡</div>
+      <h2>SHOCKIFY</h2>
+      <div class="tag">BEGINNER FRIENDLY</div>
+      <button class="access" onclick="window.open('https://shockify.st/?code=MDAxOTMwMDE5NzIwMzMwOTQ5XzY4NjQzMzUxMjc1NDMzMTg0MDM=','_blank')">ACCESS DASHBOARD</button>
+    </div>
+
+    <div class="card fade-up" style="animation-delay:.2s">
+      <div class="icon">🔍</div>
+      <h2>SPLUNK</h2>
+      <div class="tag">MOST UNFLAGGED DOMAIN</div>
+      <button class="access" onclick="window.open('https://app.beamers.si/u/jiowfsb','_blank')">ACCESS DASHBOARD</button>
+    </div>
+
+    <div class="card fade-up" style="animation-delay:.3s">
+      <div class="icon">🧍</div>
+      <h2>INJURIES</h2>
+      <div class="tag">DUALHOOK SUPPORT</div>
+      <button class="access" onclick="window.open('https://www.logged.tg/auth/chedderytt','_blank')">ACCESS DASHBOARD</button>
+    </div>
+
+  </div>
+</section>
+
+<script>
+const landing = document.getElementById("landing");
+const dash = document.getElementById("dash");
+
+function goYes() {
+  landing.classList.add("hidden");
+  dash.classList.remove("hidden");
+}
+
+function goNo() {
+  location.href = "https://discord.gg/HXDVeNrDs2";
+}
+</script>
+
+<script src="particles.js"></script>
+<script src="anti-inspect.js"></script>
+</body>
+</html>
